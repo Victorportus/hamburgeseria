@@ -1,0 +1,16 @@
+.titulo{
+    font-family:fantasy;
+    color:orange;
+    font-size: 32px;
+    text-align: center;    
+}
+
+.fondo{
+    background-color: blue;
+    margin: 5em;
+}
+
+h1{
+    text-align: center;
+    color:yellow;
+}
