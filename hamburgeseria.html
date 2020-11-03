@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <title>Hamburgeseria!</title>
-    <div class="titulo">LA HAMBURGESERIA</div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--bootstrap de la página oficial-->                  
 </head>
 <body class="fondo">
-    <br><br><br><br><br>
-    <h1>Bienvenidos!</h1>
+   <div class="container-fluid">
+     <h1 >Bienvenidos!</h1>
+     <h2>¿Qué ingredientes quiere agregar a su orden?</h2>
+    </div>
+<!-- Este es el primer renglón con dos contenedores para pan y carne-->
+    <div class="container row">
+        <div class="col-md-6 checkbox">
+<!--Botones radio para pan-->
+            <h3>Por favor elija su pan</h3>
+            <input type="radio" id="rustico" name="pan" value="rustico">
+            <label for="rustico">Rustico</label><br>
+            <input type="radio" id="brioche" name="pan" value="brioche">
+            <label for="brioche">Brioche</label><br>
+            <input type="radio" id="artesanal" name="pan" value="artesanal">
+            <label for="artesanal">Artesanal</label><br>
+            <input type="radio" id="integral" name="pan" value="integral">
+            <label for="integral">Integral</label><br>
+        </div>
+        <div class="col-md-6 checkbox">
+<!--Botones radio para carne-->
+            <h3>Por favor elija su carne</h3>
+
+        </div>
+    </div>
+
+
 </body>
 </html>
