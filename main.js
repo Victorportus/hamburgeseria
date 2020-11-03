@@ -16,7 +16,7 @@ var pedido={
         for (var i = 0; i < pan.length; i++) { 
           if (pan[i].checked) {
               pedido.pan = pan[i].value                                              //se introduce el value de pan en el atributo del objeto
-            break;
+            break;                                                                   //repetir función para cada uno de los elementos
           }
         }
     }
