@@ -10,10 +10,19 @@
 <script src="main.js"></script>                
 </head>
 <body class="fondo">
-   <div class="container alineado">
-     <h1 >Bienvenidos!</h1>
-     <h2 >¿Qué ingredientes quiere agregar a su orden?</h2>
+    <div class ="titulo">LA HAMBURGESERIA</div>
+    <br><br><br>
+    <div>
+        <div class ="row">
+            <div class="col-md-8">
+                <h2 class="centrado-tabla">¿Qué ingredientes quiere agregar a su orden?</h2>
+            </div>
+            <div class="col-md-4">
+                <img class="foto" src="imagenes/fondo.jpeg">
+            </div>
+        </div>
     </div>
+    <br><br>
 <!-- Este es el primer renglón con dos contenedores para pan y carne-->
     <div class="container row">
         <div class="col-md-6 checkbox">
@@ -80,8 +89,8 @@
             <label for="aros">Aros de cebolla</label><br>
         </div>
         <div class="col-md-6 checkbox">
-            <P>Por favor confirme presionando el botón</P>
-            <p><button onclick="getDatos()"type="button">Confirmar!</button></p>
+            <P class="completar">Por favor confirme presionando el botón</P>
+            <a href="inicio.html"><p class="centrado"><button onclick="getDatos()"type="button">Completar pedido</button></p></a>
         </div>
     </div>    
     </div>
