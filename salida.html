@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hamburgeseria!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--bootstrap de la página oficial-->
+    <script src="main.js"></script>
+    <div class="titulo">LA HAMBURGESERIA</div>
+</head>
+<body class="fondo">
+   <div class="container alineado">
+     <h1 >Cocina!</h1>
+     <h2>Estas son las ordenes a preparar</h2>
+    </div>
+<!-- Este es el primer renglón con dos contenedores para pan y carne-->
+    <div class="container row">
+        <div class="col-md-12 checkbox">
+            <p><button onclick="setDatos()" type="button">Mostrar ordenes pendientes</button></p>
+            <p>Este es un texto de ensayo</p>
+            <p>Pan: </p><p id="setPan"></p>
+            <p>Carne: </p><p id="setCarne"></p>
+            <p>Verdura: </p><p id="setVerdura"></p>
+            <p>Bebida: </p><p id="setBebida"></p>
+            <p>Acompañamiento: </p><p id="setAcompañamiento"></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

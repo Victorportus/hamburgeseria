@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Hamburgeseria!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--bootstrap de la página oficial-->                  
+<!--bootstrap de la página oficial-->  
+<script src="main.js"></script>                
 </head>
 <body class="fondo">
-   <div class="container-fluid">
+   <div class="container alineado">
      <h1 >Bienvenidos!</h1>
-     <h2>¿Qué ingredientes quiere agregar a su orden?</h2>
+     <h2 >¿Qué ingredientes quiere agregar a su orden?</h2>
     </div>
 <!-- Este es el primer renglón con dos contenedores para pan y carne-->
     <div class="container row">
@@ -30,8 +31,59 @@
         <div class="col-md-6 checkbox">
 <!--Botones radio para carne-->
             <h3>Por favor elija su carne</h3>
-
+            <input type="radio" id="res" name="carne" value="res">
+            <label for="res">Res</label><br>
+            <input type="radio" id="pollo" name="carne" value="pollo">
+            <label for="pollo">Pollo</label><br>
+            <input type="radio" id="falafel" name="carne" value="falafel">
+            <label for="falafel">Falafel</label><br>
         </div>
+    </div>
+<!--Segundo renglón-->    
+    <div class="container row">
+        <div class="col-md-6 checkbox">
+<!--Botones radio para verduras-->
+            <h3>Por favor elija su verdura</h3>
+            <input type="checkbox" id="lechuga" name="verdura" value="lechuga">
+            <label for="lechuga">Lechuga</label><br>
+            <input type="checkbox" id="tomate" name="verdura" value="tomate">
+            <label for="tomate">Tomate</label><br>
+            <input type="checkbox" id="cebolla" name="verdura" value="cebolla">
+            <label for="cebolla">Cebolla</label><br>
+            <input type="checkbox" id="pepinillos" name="verdura" value="pepinillos">
+            <label for="pepinillos">Pepinillos</label><br>
+        </div>
+
+        <div class="col-md-6 checkbox">
+<!--Botones radio para bebidas-->
+            <h3>Por favor elija su bebida</h3>
+            <input type="radio" id="cola" name="bebida" value="cola">
+            <label for="cola">Coca-cola</label><br>
+            <input type="radio" id="agua" name="bebida" value="agua">
+            <label for="agua">Agua</label><br>
+            <input type="radio" id="te" name="bebida" value="te">
+            <label for="te">Té</label><br>
+            <input type="radio" id="jugo" name="bebida" value="jugo">
+            <label for="jugo">Jugo</label><br>
+        </div>
+    </div>    
+<!--Tercer renglón-->
+    <div class="container row">
+        <div class="col-md-6 checkbox">
+<!--Botones radio para acompañamientos-->
+            <h3>Por favor elija su acompañamiento</h3>
+            <input type="radio" id="francesa" name="acompañamiento" value="francesa">
+            <label for="francesa">Papas a la francesa</label><br>
+            <input type="radio" id="casco" name="acompañamiento" value="casco">
+            <label for="casco">Papas casco</label><br>
+            <input type="radio" id="aros" name="acompañamiento" value="aros">
+            <label for="aros">Aros de cebolla</label><br>
+        </div>
+        <div class="col-md-6 checkbox">
+            <P>Por favor confirme presionando el botón</P>
+            <p><button onclick="getDatos()"type="button">Confirmar!</button></p>
+        </div>
+    </div>    
     </div>
 
 

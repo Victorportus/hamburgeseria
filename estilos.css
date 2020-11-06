@@ -6,19 +6,15 @@
 }
 
 .fondo{
-    background-color: blue;
+    background-image: url("hamburgueseria.jpg");
     margin: 5em;
 }
 
-h1{
-   
+.alineado{
     text-align: center;
-    color:yellow;
-}
-h2{
-    text-align: center;
-    color: orangered;
+    margin-bottom: 25px;
+    background-color: white;
 }
 .checkbox{
-    background-color: white;
+    background-color: lightcoral;
 }
