@@ -13,7 +13,7 @@ function getMesa(){
 }
 
 function getDatos(){
-  var pan, carne, verdura, bebida, acompañamiento;
+  var pan, carne, verdura=[], verduraARR, bebida, acompañamiento;
   //Crea variable pan, almacena value y mete variable en storage bajo PAN
   pan=document.getElementsByName("pan");
   for(var i=0; i<pan.length; i++){
@@ -31,14 +31,14 @@ function getDatos(){
     }//for if carne
   }//for carne
   //Crea variable verdura, almacena value y mete variable en storage bajo VERDURA
-  /*verdura=document.getElementsByName("verdura");
+  verdura=document.getElementsByName("verdura");
   for(var i=0; i<verdura.length; i++){
     if(verdura[i].checked){
-      verdura.push(verdura[i].value);
+      verdura=verdura[i].value;
       localStorage.VERDURA=verdura;
-    }//for if verdura
-  }//for verdura
-  */
+    }//for if bebdida
+  }//for bebdida
+  
   //Crea variable bebida, almacena value y mete variable en storage bajo BEBIDA
   bebida=document.getElementsByName("bebida");
   for(var i=0; i<bebida.length; i++){
@@ -63,17 +63,24 @@ function setDatos(){
   document.getElementById("setPan").innerHTML=localStorage.PAN ;
   //Regresa la carne
   document.getElementById("setCarne").innerHTML=localStorage.CARNE ;
-  //Regresa la verdura
+  //Regresa el verdura
   document.getElementById("setVerdura").innerHTML=localStorage.VERDURA ;
   //Regresa la bebida
   document.getElementById("setBebida").innerHTML=localStorage.BEBIDA ;
   //Regresa el acompañamiento
   document.getElementById("setAcompañamiento").innerHTML=localStorage.ACOMPAÑAMIENTO ;
+  //Regresa el nombre
+  document.getElementById("setNombre").innerHTML=localStorage.NOMBRE;
+  //Regresa la mesa
+  document.getElementById("setMesa").innerHTML=localStorage.MESA;
   }
 
+/*
+se incorporaron los elementos en setDatos() para ejecutar una sola funcion
 function setMesa(){
   //Regresa el nombre
   document.getElementById("setNombre").innerHTML=localStorage.NOMBRE;
   //Regresa la mesa
   document.getElementById("setMesa").innerHTML=localStorage.MESA;
 }
+*/

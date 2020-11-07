@@ -16,19 +16,46 @@
      <h2>Ordenes pendientes por entregar</h2>
     </div>
 <!-- Este es el primer renglón con dos contenedores para pan y carne-->
-    <div class="container row">
-        <div class="col-md-12 cocina">
-            
-            <p>Nombre: </p><p id="setNombre"></p>
-            <p>Mesa: </p><p id="setMesa"></p>
-            <p>Pan: </p><p id="setPan"></p>
-            <p>Carne: </p><p id="setCarne"></p>
-            <p>Verdura: </p><p id="setVerdura"></p>
-            <p>Bebida: </p><p id="setBebida"></p>
-            <p>Acompañamiento: </p><p id="setAcompañamiento"></p>
-            <p><button onclick="setDatos()" onclick="setMesa()" type="button">Mostrar ordenes pendientes</button></p>
-            </div>
-        </div>
+<div class="container row">
+    <div class="col-md-12 cocina">
+
+        <table style="width:100%">
+            <tr>
+              <th>Elemento</th>
+              <th>Elección</th> 
+            </tr>
+            <tr>
+              <td>Nombre:</td>
+              <td><p id="setNombre"></p></td>
+            </tr>
+            <tr>
+              <td>Mesa:</td>
+              <td><p id="setMesa"></p></td>
+            </tr>
+            <tr>
+              <td>Pan:</td>
+              <td><p id="setPan"></p></td>
+            </tr>
+            <tr>
+                <td>Carne:</td>
+                <td><p id="setCarne"></p></td>
+              </tr>
+              <tr>
+                <td>Verdura</td>
+                <td><p id="setVerdura"></p></td>
+              </tr>
+              <tr>
+                <td>Bebida</td>
+                <td><p id="setBebida"></p></td>
+              </tr>
+              <tr>
+                <td>Acompañamiento</td>
+                <td><p id="setAcompañamiento"></p></td>
+              </tr>
+        </table>
+    <p><button onclick="setDatos()" type="button">Mostrar ordenes pendientes</button></p>
+    </div>
+</div>
 
 
 </body>
