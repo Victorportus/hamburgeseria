@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="main.js"></script>
     <title>Hamburgeseria!</title>
     <div class="titulo">LA HAMBURGESERIA</div>
 </head>
@@ -11,11 +13,14 @@
     <br><br><br><br>
     <h1>Bienvenidos!</h1>
     <p class="datos">Para iniciar tu pedido ingresa tus datos</p>
+    <br>
+    <div>
+        <form action="#">
+            <input type="text" placeholder="Introduzca su nombre" id="nombre">
+            <input type="number" placeholder="Introuzca su mesa" id="mesa">
+        </form>
+    </div>
     <br><br>
-    <label for="name">Ingresa tu nombre.</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="mesa">Ingresa tu numero de mesa.</label>
-    <input type="text" id="mesa" name="mesa"><br><br>
     <a href="hamburgeseria.html"><p><button onclick="getMesa()"type="button">Siguiente</button></p></a>
     <a href="salida.html" target="_blank"><p class="derecha">Ir a cocina</p></a>
 </body>

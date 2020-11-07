@@ -53,6 +53,9 @@ h1{
 
 .cocina{
     background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
 }
 
 p {
