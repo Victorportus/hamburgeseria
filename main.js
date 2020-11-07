@@ -75,12 +75,5 @@ function setDatos(){
   document.getElementById("setMesa").innerHTML=localStorage.MESA;
   }
 
-/*
-se incorporaron los elementos en setDatos() para ejecutar una sola funcion
-function setMesa(){
-  //Regresa el nombre
-  document.getElementById("setNombre").innerHTML=localStorage.NOMBRE;
-  //Regresa la mesa
-  document.getElementById("setMesa").innerHTML=localStorage.MESA;
-}
-*/
+
+  
