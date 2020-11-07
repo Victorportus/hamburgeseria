@@ -1,17 +1,8 @@
 
 
 /*
-// la funcion para introducir los datos en el objeto pedido
-    tomarDatos: function() {
-        var pan = document.getElementsByName('pan');                                                                                     // se recoren los elementos pan para encontrar el checkeado
-        for (var i = 0; i < pan.length; i++) { 
-          if (pan[i].checked) {
-              pedido.pan = pan[i].value;                                              //se introduce el value de pan en el atributo del objeto
-            break;                                                                   //repetir función para cada uno de los elementos
-          }
-        }
-    }
--->
+Estas funciones sirven para tomar los datos de la página hamburgueseria, guardaros en almacenamiento local y reproducirlos en 
+la página de salida. 
 */
 function getMesa(){
   var mesa, nombre;
@@ -78,8 +69,11 @@ function setDatos(){
   document.getElementById("setBebida").innerHTML=localStorage.BEBIDA ;
   //Regresa el acompañamiento
   document.getElementById("setAcompañamiento").innerHTML=localStorage.ACOMPAÑAMIENTO ;
+  }
+
+function setMesa(){
   //Regresa el nombre
   document.getElementById("setNombre").innerHTML=localStorage.NOMBRE;
   //Regresa la mesa
   document.getElementById("setMesa").innerHTML=localStorage.MESA;
-  }
+}
