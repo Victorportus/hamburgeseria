@@ -14,8 +14,11 @@
 -->
 */
 function getMesa(){
-  mesa=document.getElementsByName("mesa");
-  localStorage.MESA=mesa;
+  var mesa, nombre;
+  nombre=document.getElementById("nombre");
+  localStorage.NOMBRE=nombre.value;
+  mesa=document.getElementById("mesa");
+  localStorage.MESA=mesa.value;
 }
 
 function getDatos(){
@@ -65,8 +68,6 @@ function getDatos(){
 } //tomaDatos
 
 function setDatos(){
-  //Regresa la mesa
-  document.getElementById("setMesa").innerHTML=localStorage.MESA ;
   //Regresa el pan
   document.getElementById("setPan").innerHTML=localStorage.PAN ;
   //Regresa la carne
@@ -77,4 +78,8 @@ function setDatos(){
   document.getElementById("setBebida").innerHTML=localStorage.BEBIDA ;
   //Regresa el acompañamiento
   document.getElementById("setAcompañamiento").innerHTML=localStorage.ACOMPAÑAMIENTO ;
-}
+  //Regresa el nombre
+  document.getElementById("setNombre").innerHTML=localStorage.NOMBRE;
+  //Regresa la mesa
+  document.getElementById("setMesa").innerHTML=localStorage.MESA;
+  }
